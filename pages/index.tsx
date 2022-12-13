@@ -1,10 +1,13 @@
 // ChakraUI
-import { useColorModeValue, Flex } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/react'
 // Components
-import Info_About_Me from '../components/home/info_card'
-import Basic_Card_Info from '../components/home/basic_card_info'
+// import Basic_Card_Info from '../components/home/basic_card_info'
 import Technologies_Knowledge from '../components/home/technologies_knowledge'
 import Container from '../components/layout/container'
+import Info_About_Me from '../components/home/info_card'
+import About_Me from '../components/home/new/about_me'
+import Knowledge from '../components/home/new/knowledge'
+import Experience from '../components/home/new/experience'
 
 const technologies = [
   { index: 1, name: 'HTML', image: '/images/html-5.svg' },
@@ -25,10 +28,12 @@ const description2 = "Hay cambios, animaciones y proyectos por agregar 😸"
  */
 export default function AboutMe(): JSX.Element {
   return (
-    <Container>
-      <Basic_Card_Info />
-      <Info_About_Me title={"Soy titulo"} showTitle="none" showTabDisplay="none" description={description} description2={description2} />
-      <Technologies_Knowledge data={technologies} />
-    </Container>
+    <>
+      <About_Me />
+      <Knowledge />
+      <Experience />
+      {/* <Info_About_Me title={"Soy titulo"} showTitle="none" showTabDisplay="none" description={description} description2={description2} /> */}
+      {/* <Technologies_Knowledge data={technologies} /> */}
+    </>
   )
 }

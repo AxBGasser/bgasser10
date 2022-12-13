@@ -3,18 +3,6 @@ import Container from "../components/layout/container";
 import InfoCard from '../components/home/info_card'
 import Experience_Card from "../components/experience/experience_card";
 
-/* const technologies = [
-    { index: 1, name: 'HTML', image: '/images/html-5.svg' },
-    { index: 2, name: 'CSS', image: '/images/css-3.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-    { index: 3, name: 'Tailwind CSS', image: '/images/tailwind-css.svg' },
-] */
-
 const experiences = [
     {
         titleProject: "Rediseño de una página web",
@@ -29,9 +17,7 @@ const experiences = [
 
 export default function Experience(props: any): JSX.Element {
     return (
-        <Container>
-            <Experience_Card data={experiences} />
-        </Container>
+        <Experience_Card data={experiences} />
 
     )
 }

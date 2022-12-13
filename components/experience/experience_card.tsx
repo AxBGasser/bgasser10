@@ -10,7 +10,7 @@ export default function Experience_Cad(props: any): JSX.Element {
         // timer 
         setTimeout(() => {
             setLoading(true)
-        }, 1250)
+        }, 0)
 
     }, [])
 
@@ -52,22 +52,18 @@ export default function Experience_Cad(props: any): JSX.Element {
     if (isLoading) {
         return (
             <>
-                {
-                    props.data.map((project: { titleProject: string, tabTitle: string, tabContent: string, tabTitle2: string, tabContent2: string, image: string, image2: string, image3: string, url: string }) => (
-                        <>
-                            <InfoCard title={project.titleProject} show='block' tabDisplay={"block"}
-                                tabTitle={project.tabTitle}
-                                tabContent={project.tabContent}
-                            /*  tabTitle2={project.tabTitle2}
-                            tabContent2={project.image} */
-                            />
-                            <Link display={'none'} href={'#blank'}>
-                                <Code>{project.url}</Code>
-                            </Link>
-                            <Divider mb={10} mt={3} width={{ base: '100%', md: '75%', lg: '65%', xl: '65%', '2xl': '69.5%' }} h={'auto'} />
-                        </>
-                    ))
-                }
+                {props.data.map((project: { titleProject: string, tabTitle: string, tabContent: string, tabTitle2: string, tabContent2: string, image: string, image2: string, image3: string, url: string }) => (
+                    <>
+                        <InfoCard title={project.titleProject} show='block' tabDisplay={"block"}
+                            // tabTitle={project.tabTitle}
+                            tabContent={project.tabContent}
+                        />
+                        <Link display={'none'} href={'#blank'}>
+                            <Code>{project.url}</Code>
+                        </Link>
+                        <Divider mb={10} mt={3} width={{ base: '100%', md: '75%', lg: '65%', xl: '65%', '2xl': '69.5%' }} h={'auto'} />
+                    </>
+                ))}
             </>
         )
     }

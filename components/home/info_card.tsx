@@ -10,9 +10,9 @@ import { Flex, Heading, Highlight, Tab, TabList, TabPanel, TabPanels, Tabs, Text
 
 export default function InfoCard(props: any | undefined): JSX.Element {
     return (
-        <Flex width={{ base: '100%', md: '75%', lg: '65%', xl: '65%', '2xl': '69.5%' }} h={'auto'} borderRadius={5} px={'5'} py={'2'}
+        // <Flex width={{ base: '100%', md: '75%', lg: '65%', xl: '65%', '2xl': '69.5%' }} h={'auto'} borderRadius={5} px={'5'} py={'2'}
+        <Flex width={'100%'} h={'100%'} borderRadius={5} px={'5'} py={'2'}
             mt={"1"} direction='column' mx={"auto"} align={'center'} >
-
             <Heading display={props.showTitle} as='h3' size='md' my={3}>{props.title}</Heading>
             <Text fontSize={"md"} textAlign="center">
                 {props.description}
@@ -22,10 +22,9 @@ export default function InfoCard(props: any | undefined): JSX.Element {
             </Text>
 
             <Tabs isFitted variant='enclosed' display={props.showTabDisplay} width={"100%"}>
-                <TabList mb='1em'>
+                {/* <TabList mb='1em'>
                     <Tab >{props.tabTitle}</Tab>
-                    {/*  <Tab >{props.tabTitle2}</Tab> */}
-                </TabList>
+                </TabList> */}
                 <TabPanels>
                     <TabPanel textAlign={'center'}>
                         {/*    <Highlight query={[

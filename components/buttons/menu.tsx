@@ -59,15 +59,15 @@ export default function Menu() {
                                     <Heading color={useColorModeValue('#181818', '#F2ECFF')}
                                         fontSize={{ sm: 'sm', md: 'md', lg: 'lg', xl: '4xl' }}
                                     >
-                                        Acerca de mi
+                                        Inicio
                                     </Heading>
                                 </Link>
-                                <Link href='/experience' bgColor={'transparent'} title={experience} >
+                               {/*  <Link href='/experience' bgColor={'transparent'} title={experience} >
                                     <Heading color={useColorModeValue('#181818', '#F2ECFF')}
                                         fontSize={{ sm: 'md', md: 'md', lg: 'lg', xl: '4xl' }}>
-                                        Proyectos
+                                        Experiencia
                                     </Heading>
-                                </Link>
+                                </Link> */}
                                 {/* <Link href='/more' bgColor={'transparent'}>
                                     <Heading color={useColorModeValue('#181818', '#F2ECFF')}
                                         fontSize={{ sm: 'sm', md: 'md', lg: 'lg', xl: '4xl' }}>

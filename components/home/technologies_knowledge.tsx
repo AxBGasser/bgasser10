@@ -24,7 +24,7 @@ export default function Technologies_Knowledge(props: any): JSX.Element {
     // Loading
     if (!isLoading) {
         return (
-            <Stack w={'50%'} h={'fit-content'} p={3} my={"3"} mx={{ base: 'auto', md: "25%" }} gap={5} >
+            <Stack  w={'50%'} h={'fit-content'} p={3} my={"3"} mx={{ base: 'auto', md: "25%" }} gap={5} >
                 <Wrap justify={"center"} align={'center'} spacing={4} direction={"row"} >
                     <Skeleton height={50} w={50} >
                         {props.data.map((tech: { index: number, name: string, image: string }) => (
@@ -55,7 +55,7 @@ export default function Technologies_Knowledge(props: any): JSX.Element {
     // Displaying data | Loaded
     if (isLoading) {
         return (
-            <Stack w={'50'} h={'fit-content'} p={3} my={"3"} mx={{ md: "20%", lg: "35%", xl: "40%", xxl: "40%" }} gap={5} >
+            <Stack id={'#Knowledge'} w={'50'} h={'fit-content'} p={3} my={"3"} mx={{ md: "20%", lg: "35%", xl: "40%", xxl: "40%" }} gap={5} >
                 <Wrap justify={"center"} align={'center'} spacing={4} direction={"row"} >
                     {props.data.map((tech: { index: number, name: string, image: string }) => (
                         <WrapItem key={tech.index}>
